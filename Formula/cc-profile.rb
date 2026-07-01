@@ -6,6 +6,11 @@ class CcProfile < Formula
   license "MIT"
   head "https://github.com/therealhieu/cc-profile.git", branch: "master"
 
+  livecheck do
+    url :stable
+    strategy :github_latest
+  end
+
   depends_on "rust" => :build
 
   def install
@@ -14,10 +19,5 @@ class CcProfile < Formula
 
   test do
     assert_match version.to_s, shell_output("#{bin}/cc-profile --version")
-  end
-
-  livecheck do
-    url :stable
-    strategy :github_latest
   end
 end
