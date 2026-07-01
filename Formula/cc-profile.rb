@@ -2,7 +2,7 @@ class CcProfile < Formula
   desc "Profile management for Claude Code endpoints and models"
   homepage "https://github.com/therealhieu/cc-profile"
   url "https://github.com/therealhieu/cc-profile/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "2f641d5cc6f35b1f97c8224a23d58fdf064e49634223b146c7c442208838beaa"
+  sha256 "eb4dc3926f024a6a5379151e98f5b722c4f9853806b4e3b46d5208ce1fd25887"
   license "MIT"
   head "https://github.com/therealhieu/cc-profile.git", branch: "master"
 
