@@ -10,19 +10,19 @@ class CcProfile < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/therealhieu/cc-profile/releases/download/v0.1.2/cc-profile-v0.1.2-aarch64-apple-darwin.tar.gz"
-      sha256 "86df92297a7869f8ba2571c716da218ca8480cd0d252e0acf69cb29fdc98d0ea"
+      url "https://github.com/therealhieu/cc-profile/releases/download/v0.1.3/cc-profile-v0.1.3-aarch64-apple-darwin.tar.gz"
+      sha256 "d0d16547887008ed1d0dbd7b560047098cca72ec3631802afbf50643608f5872"
     end
     on_intel do
-      url "https://github.com/therealhieu/cc-profile/releases/download/v0.1.2/cc-profile-v0.1.2-x86_64-apple-darwin.tar.gz"
-      sha256 "c6c30d8be3aa111126e65f6b9b13aeaa0360e326e42a72375b9b6a995d67c138"
+      url "https://github.com/therealhieu/cc-profile/releases/download/v0.1.3/cc-profile-v0.1.3-x86_64-apple-darwin.tar.gz"
+      sha256 "2d264b86034a67965554995d8e8835ece9ee6efc13619c7af671c2317b09d7e3"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/therealhieu/cc-profile/releases/download/v0.1.2/cc-profile-v0.1.2-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "1254573e3c38e311f6d734661ce66b96266296f04999ae1bf8d5cb3cf09d3b70"
+      url "https://github.com/therealhieu/cc-profile/releases/download/v0.1.3/cc-profile-v0.1.3-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "3838f8350f96dda891806c7d1a454357b081c32d799cdfe47780be3a612f39fb"
     end
   end
 
