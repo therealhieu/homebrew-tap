@@ -10,22 +10,22 @@ class So < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/therealhieu/so/releases/download/v0.1.0/so-darwin-arm64"
-      sha256 "23022cd819c820f201706236da925311bade0b6c039a5bda0ebbe5bbdca9a886"
+      url "https://github.com/therealhieu/so/releases/download/v0.1.1/so-darwin-arm64"
+      sha256 "24ab3847730dd063f369881aa6c6f3b709ca3d7a5c6d8bbffc973fda7b0104e5"
     end
     on_intel do
-      url "https://github.com/therealhieu/so/releases/download/v0.1.0/so-darwin-x64"
-      sha256 "1c74e4105539057b644cbd3aaf29b2bdc8d6d1d863ced6a7be92431689adac69"
+      url "https://github.com/therealhieu/so/releases/download/v0.1.1/so-darwin-x64"
+      sha256 "aa27b02b9604de0511953e0d0bc6e64ce6a5d0ec927318fdb4f9be172e2cad3f"
     end
   end
   on_linux do
     on_arm do
-      url "https://github.com/therealhieu/so/releases/download/v0.1.0/so-linux-arm64"
-      sha256 "7a9ddfa2453d61008f3ac2f8c6d3d585146492af34e1df1bcc7b4d8a820b981f"
+      url "https://github.com/therealhieu/so/releases/download/v0.1.1/so-linux-arm64"
+      sha256 "2ae0fd5ff38848a47549218b9f1bbe5df775fc133d4dfcb270b2b72a916edf11"
     end
     on_intel do
-      url "https://github.com/therealhieu/so/releases/download/v0.1.0/so-linux-x64"
-      sha256 "d4b0d2c64a2284cedbe97f07bcacba280016f35e8bc4451ad719e60ae9b04f90"
+      url "https://github.com/therealhieu/so/releases/download/v0.1.1/so-linux-x64"
+      sha256 "3c279258d87e28293417cdb7f9bd16a352a0dd423de44618b697404097dadb20"
     end
   end
 
