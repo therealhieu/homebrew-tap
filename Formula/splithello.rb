@@ -10,38 +10,27 @@ class Splithello < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/therealhieu/splithello/releases/download/v0.1.0/splithello-v0.1.0-aarch64-apple-darwin.tar.gz"
-      sha256 "d6e9c7457bee1e848dfb3bb8734c46858692f8216e52b2e8fe4063f30366cbfd"
+      url "https://github.com/therealhieu/splithello/releases/download/v0.1.1/splithello-v0.1.1-aarch64-apple-darwin.tar.gz"
+      sha256 "1096e779ea6b2445a2405b14c372798867c841d45512d5341c0e52df85addbfe"
     end
     on_intel do
-      url "https://github.com/therealhieu/splithello/releases/download/v0.1.0/splithello-v0.1.0-x86_64-apple-darwin.tar.gz"
-      sha256 "20f518d61ac7b5f5349324e3249cd750809c73280956cf1b971260f6581a445d"
+      url "https://github.com/therealhieu/splithello/releases/download/v0.1.1/splithello-v0.1.1-x86_64-apple-darwin.tar.gz"
+      sha256 "8023cab081f8d19d7f6f9757b53ed9c311fb3d65bcce5a078587b0e0709b2284"
     end
   end
   on_linux do
     on_arm do
-      url "https://github.com/therealhieu/splithello/releases/download/v0.1.0/splithello-v0.1.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "900184b7486e75217230141b9aedd51db5e5c02bab10ef36c99fd66fbf7077d1"
+      url "https://github.com/therealhieu/splithello/releases/download/v0.1.1/splithello-v0.1.1-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "8a0e912205b36552b242ff2e81a1a04e87401a3d242e20880c18d001e6090248"
     end
     on_intel do
-      url "https://github.com/therealhieu/splithello/releases/download/v0.1.0/splithello-v0.1.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "f3184fc78c3aa942bcb5e5f4707987bc92bf40a13d9c9957465a085a90e607cd"
+      url "https://github.com/therealhieu/splithello/releases/download/v0.1.1/splithello-v0.1.1-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "3b925a2b61ed2bce92a217ee93d7ce89c20a41b5a4384d43bb45a096f33f8a8b"
     end
   end
 
   def install
     bin.install "splithello"
-  end
-
-  # `brew services start splithello`: runs at login. Restarted only after a crash (launchd), so a
-  # config error stops it instead of looping; systemd's restart limit ends such a loop on Linux.
-  # The marker lets `splithello stop` point to `brew services stop` instead.
-  service do
-    run [opt_bin/"splithello", "start", "--log-file", var/"log/splithello.log"]
-    environment_variables SPLITHELLO_MANAGED_BY: "homebrew"
-    keep_alive crashed: true
-    log_path var/"log/splithello.log"
-    error_log_path var/"log/splithello.log"
   end
 
   test do
